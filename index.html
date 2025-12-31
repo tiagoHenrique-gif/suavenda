@@ -5,17 +5,47 @@
   <title>Suavenda</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>🔥 Suavenda</h1>
-    <p>As melhores ofertas em um só lugar</p>
+  <!-- MENU DE NAVEGAÇÃO -->
+  <header class="navbar">
+    <div class="logo">SuaVenda</div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#ofertas">Ofertas</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main id="product-list"></main>
+  <!-- SEÇÕES -->
+  <section id="home">
+    <h1>Bem-vindo à SuaVenda</h1>
+    <p>As melhores ofertas em um só lugar</p>
+  </section>
 
+  <section id="ofertas">
+    <h2>🔥 Ofertas em Destaque</h2>
+  </section>
+
+  <section id="produtos">
+    <h2>🛒 Produtos</h2>
+    <main id="product-list"></main>
+  </section>
+
+  <section id="contato">
+    <h2>📞 Contato</h2>
+    <p>Em breve canais de atendimento.</p>
+  </section>
+
+  <!-- SCRIPTS -->
   <script src="assets/js/model/products.js"></script>
   <script src="assets/js/view/renderView.js"></script>
   <script src="assets/js/controller/appController.js"></script>
+
 </body>
 </html>
