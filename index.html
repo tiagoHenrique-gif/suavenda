@@ -2,18 +2,21 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>SuaVenda</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suavenda | Ofertas Inteligentes</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
-  <!-- MENU DE NAVEGAÇÃO -->
+  <!-- NAVBAR -->
   <header class="navbar">
     <div class="logo">SuaVenda</div>
-
-    <nav>
+    <div class="hamburger" id="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav id="nav-menu">
       <ul class="menu">
         <li><a href="#home">Início</a></li>
         <li><a href="#ofertas">Ofertas</a></li>
@@ -23,34 +26,38 @@
     </nav>
   </header>
 
-  <!-- HERO / HOME -->
-  <section id="home">
-    <h1>🔥 SuaVenda</h1>
-    <p>As melhores ofertas e produtos afiliados em um só lugar</p>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Bem-vindo à SuaVenda</h1>
+      <p>As melhores ofertas em um só lugar. Economize tempo e dinheiro!</p>
+      <a href="#produtos" class="btn-hero">Ver Produtos</a>
+    </div>
   </section>
 
   <!-- OFERTAS -->
-  <section id="ofertas">
-    <h2>🔥 Ofertas em Destaque</h2>
-    <p>Selecionamos oportunidades que realmente valem a pena.</p>
+  <section id="ofertas" class="section">
+    <h2>Ofertas em Destaque</h2>
+    <div id="oferta-list" class="grid"></div>
   </section>
 
   <!-- PRODUTOS -->
-  <section id="produtos">
-    <h2>🛒 Produtos</h2>
-    <main id="product-list"></main>
+  <section id="produtos" class="section">
+    <h2>Produtos</h2>
+    <div id="product-list" class="grid"></div>
   </section>
 
   <!-- CONTATO -->
-  <section id="contato">
-    <h2>📞 Contato</h2>
-    <p>Em breve teremos canais de atendimento.</p>
+  <section id="contato" class="section">
+    <h2>Contato</h2>
+    <p>Entre em contato pelo e-mail: <a href="mailto:contato@suavenda.com">contato@suavenda.com</a></p>
   </section>
 
-  <!-- SCRIPTS MVC -->
+  <!-- SCRIPTS -->
   <script src="assets/js/model/products.js"></script>
   <script src="assets/js/view/renderView.js"></script>
   <script src="assets/js/controller/appController.js"></script>
+  <script src="assets/js/controller/hamburger.js"></script>
 
 </body>
 </html>
