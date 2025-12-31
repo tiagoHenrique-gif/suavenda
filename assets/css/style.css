@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+header {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.product {
+  background: #fff;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.product a {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  background: green;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
