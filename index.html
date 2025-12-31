@@ -3,61 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Suavenda | Ofertas Inteligentes</title>
+  <title>Suavenda</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">SuaVenda</div>
-    <div class="hamburger" id="hamburger">
-      <div></div>
-      <div></div>
-      <div></div>
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header>
+    <div class="navbar">
+      <div class="logo">SuaVenda</div>
+      <nav>
+        <ul class="menu">
+          <li><a href="#home">Início</a></li>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+        <div class="hamburger">&#9776;</div>
+      </nav>
     </div>
-    <nav id="nav-menu">
-      <ul class="menu">
-        <li><a href="#home">Início</a></li>
-        <li><a href="#ofertas">Ofertas</a></li>
-        <li><a href="#produtos">Produtos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+    <div class="hero">
+      <h1>🔥 Suavenda</h1>
+      <p>As melhores ofertas em um só lugar</p>
+    </div>
   </header>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Bem-vindo à SuaVenda</h1>
-      <p>As melhores ofertas em um só lugar. Economize tempo e dinheiro!</p>
-      <a href="#produtos" class="btn-hero">Ver Produtos</a>
-    </div>
-  </section>
+  <!-- ===== SEÇÕES ===== -->
+  <main>
+    <section id="ofertas">
+      <h2>Ofertas em Destaque</h2>
+      <div id="featured-list"></div>
+    </section>
 
-  <!-- OFERTAS -->
-  <section id="ofertas" class="section">
-    <h2>Ofertas em Destaque</h2>
-    <div id="oferta-list" class="grid"></div>
-  </section>
+    <section id="produtos">
+      <h2>Produtos</h2>
+      <div id="product-list"></div>
+    </section>
 
-  <!-- PRODUTOS -->
-  <section id="produtos" class="section">
-    <h2>Produtos</h2>
-    <div id="product-list" class="grid"></div>
-  </section>
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Envie uma mensagem ou fale conosco pelas redes sociais!</p>
+    </section>
+  </main>
 
-  <!-- CONTATO -->
-  <section id="contato" class="section">
-    <h2>Contato</h2>
-    <p>Entre em contato pelo e-mail: <a href="mailto:tiagohenrique10.silva@gmail.com">contato@suavenda.com</a></p>
-  </section>
-
-  <!-- SCRIPTS -->
+  <!-- ===== SCRIPTS ===== -->
   <script src="assets/js/model/products.js"></script>
   <script src="assets/js/view/renderView.js"></script>
   <script src="assets/js/controller/appController.js"></script>
   <script src="assets/js/controller/hamburger.js"></script>
-
 </body>
 </html>

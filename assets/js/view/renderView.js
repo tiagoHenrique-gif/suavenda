@@ -1,24 +1,19 @@
-// assets/js/view/renderView.js
-
 const productList = document.getElementById('product-list');
 
 function renderProducts(products) {
-  productList.innerHTML = ''; // limpa antes de renderizar
+  productList.innerHTML = '';
 
   products.forEach(product => {
-    const productCard = document.createElement('div');
-    productCard.classList.add('product-card');
-
-    productCard.innerHTML = `
-      <img src="${product.image}" alt="${product.name}" class="product-image">
+    const card = document.createElement('div');
+    card.classList.add('product-card');
+    card.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">
       <h3>${product.name}</h3>
       <p>${product.price}</p>
       <a href="${product.link}" target="_blank">Comprar</a>
     `;
-
-    productList.appendChild(productCard);
+    productList.appendChild(card);
   });
 }
 
-// renderiza os produtos assim que a página carrega
 renderProducts(products);
