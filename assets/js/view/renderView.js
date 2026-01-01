@@ -6,12 +6,19 @@ function renderProducts(products) {
   products.forEach(product => {
     const card = document.createElement('div');
     card.classList.add('product-card');
+
     card.innerHTML = `
       <img src="${product.image}" alt="${product.name}">
+      
       <h3>${product.name}</h3>
-      <p>${product.price}</p>
-      <a href="${product.link}" target="_blank">Comprar</a>
+      
+      <p class="price">${product.price}</p>
+      
+      <a href="${product.link}" target="_blank" class="btn-buy">
+        🚀 Oferta Limitada
+      </a>
     `;
+
     productList.appendChild(card);
   });
 }
